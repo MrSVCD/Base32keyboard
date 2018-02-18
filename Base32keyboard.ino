@@ -5,8 +5,8 @@ const char Base32Alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
 
 void setup() {
   Serial.begin(9600);
-  Serial.println(Base32Alphabet[hello[0]>>2]); //Should give "J" but gives "S"
-  Serial.println(hello[0]>>2, DEC);
+  Serial.println(Base32Alphabet[hello[0]>>3]);
+  Serial.println(hello[0]>>3, DEC);
 }
 
 void loop() {
